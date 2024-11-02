@@ -1,4 +1,4 @@
 networkx==3.4.2
 implicit==0.7.2
-unicorn==0.32.0
+uvicorn==0.32.0
 fastapi==0.115.3y
