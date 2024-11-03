@@ -6,8 +6,8 @@ COPY . .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-ENV RETRIEVAL_API_URL="retrieval:8000"
-ENV RANKING_API_URL="ranking:8001"
+# ENV RETRIEVAL_API_URL="http://retrieval:8000"
+# ENV RANKING_API_URL="http://ranking:8001"
 
 EXPOSE 8501
 

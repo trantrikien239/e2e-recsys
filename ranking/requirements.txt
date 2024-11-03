@@ -1,0 +1,17 @@
+uvicorn==0.32.0
+fastapi==0.115.3
+torch==2.4.1
+numpy
+pandas
+pyarrow
+torch_geometric
+scikit-learn
+
+
+# -f https://data.pyg.org/whl/torch-2.4.0+cpu.html
+# torch_scatter
+# torch_sparse
+# torch_cluster
+# torch_spline_conv
+
+

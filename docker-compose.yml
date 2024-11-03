@@ -1,0 +1,28 @@
+services:
+  retrieval:
+    image: retrieval
+    ports:
+      - 8000
+    networks:
+      - e2e-recsys
+
+  ranking:
+    image: ranking
+    ports:
+      - 8001
+    networks:
+      - e2e-recsys
+
+  ui:
+    image: ui
+    ports:
+      - 8501:8501
+    environment:
+      - RETRIEVAL_API_URL=http://retrieval:8000
+      - RANKING_API_URL=http://ranking:8001
+    networks:
+      - e2e-recsys
+
+networks:
+  e2e-recsys:
+    driver: bridge
