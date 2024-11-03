@@ -9,7 +9,7 @@ import uvicorn
 from fastapi import FastAPI, HTTPException, Request
 from contextlib import asynccontextmanager
 
-from random_walk import random_neigh, random_hop, candidate_gen_hop
+from random_walk import candidate_gen_hop
 from matrix_factorization import model as als_model
 
 EDGE_PATH = os.environ.get('EDGE_PATH', 'data/val_edges.parquet')
